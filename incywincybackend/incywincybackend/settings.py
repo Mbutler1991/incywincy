@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = False
 
-ALLOWED_HOSTS = ["localhost", "www.incywincywebservices.com", "incywincywebservices.com"]
+ALLOWED_HOSTS = ["incywincy-e84781e01ccd.herokuapp.com", "localhost", "www.incywincywebservices.com", "incywincywebservices.com"]
 
 
 # Application definition
