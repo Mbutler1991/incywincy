@@ -26,7 +26,7 @@ const PortfolioSection = () => {
                             <p className="text-gray-700 text-base">{project.description}</p>
                         </div>
                         <div className="px-6 pt-4 pb-2">
-                            <a href={project.link} className="text-blue-500 hover:text-blue-800">View Project</a>
+                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-800">View Project</a>
                         </div>
                     </div>
                 ))}
