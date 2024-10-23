@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = False
 
-ALLOWED_HOSTS = ["http://localhost:3000",  "http://localhost:5173", "www.incywincywebservices.com", "incywincywebservices.com"]
+ALLOWED_HOSTS = ["localhost", "www.incywincywebservices.com", "incywincywebservices.com"]
 
 
 # Application definition
@@ -79,7 +79,10 @@ WSGI_APPLICATION = 'incywincybackend.wsgi.application'
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  "http://localhost:5173",
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "https://www.incywincywebservices.com",
+    "https://incywincywebservices.com",
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -96,18 +99,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+   }
+} 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
-
-# Media files settings
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
 
 # Configure the database from the DATABASE_URL environment variable
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+
 
 
 # Password validation
