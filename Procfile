@@ -1,0 +1,1 @@
+web: python incywincybackend/manage.py migrate && gunicorn incywincybackend.wsgi --log-file -

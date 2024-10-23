@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate-sitemap": "node generate-sitemap.js"
+    "generate-sitemap": "node generate-sitemap.js",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "node.js": "^0.0.1-security",
