@@ -1,1 +1,2 @@
-web: python incywincybackend/manage.py migrate && gunicorn incywincybackend.wsgi --log-file -
+release: python incywincybackend/manage.py migrate
+web: gunicorn incywincybackend.wsgi --log-file -
