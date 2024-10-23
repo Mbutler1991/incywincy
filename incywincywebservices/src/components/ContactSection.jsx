@@ -22,7 +22,6 @@ const ContactSection = () => {
             .then(response => {
                 setSuccessMessage('Thank You! Your message has been sent!');
                 setFormData({ name: '', email: '', message: '' });
-                window.scrollTo(0, 0); // Scroll back to the top of the page
             })
             .catch(error => {
                 console.error('There was an error sending the message!', error);

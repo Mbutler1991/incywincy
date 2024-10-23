@@ -7,7 +7,7 @@ const SeoOptimization = () => {
   return (
     <section className="py-20 text-center">
       {/* Header Section */}
-      <h2 className="text-4xl font-bold mb-4">SEO Optimization</h2>
+      <h2 className="text-4xl font-bold mb-4">SEO Optimization Services in Ireland</h2>
       <p className="mb-6 text-lg">
         Improve your website's visibility on search engines. We use proven techniques like keyword research, on-page optimization, and link building.
       </p>
@@ -53,16 +53,6 @@ const SeoOptimization = () => {
           <FaFileAlt className="text-green-600 mr-2" /> Customized content strategies.
         </li>
       </ul>
-
-      {/* Call to Action */}
-      <div className="mt-6">
-        <button
-          className="text-white bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg shadow-md"
-          onClick={() => window.scrollTo(0, document.body.scrollHeight)}
-        >
-          Start Optimizing Now
-        </button>
-      </div>
 
       {/* Back to Home */}
       <div className="mt-6">

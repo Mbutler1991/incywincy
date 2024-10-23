@@ -1,6 +1,4 @@
-// src/pages/EcommerceSolutions.jsx
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaShoppingCart, FaStore, FaCreditCard, FaShippingFast, FaGift } from 'react-icons/fa';
 import ContactForm from "../components/ContactSection";
 
@@ -8,73 +6,69 @@ const EcommerceSolutions = () => {
   return (
     <section className="py-20 text-center">
       {/* Header Section */}
-      <h2 className="text-4xl font-bold mb-4">E-commerce Solutions</h2>
+      <h1 className="text-4xl font-bold mb-4">Custom E-commerce Solutions in Ireland</h1>
       <p className="mb-6 text-lg">
-        We design and develop custom e-commerce platforms with secure payment systems, shopping carts, and inventory management.
+        We design and develop custom <strong>e-commerce platforms</strong> with secure payment systems, custom shopping carts, and inventory management for businesses across <strong>Co. Clare</strong> and <strong>Ireland</strong>.
       </p>
 
       {/* List of Services with Icons */}
       <ul className="list-none space-y-4 mb-6 text-left max-w-xl mx-auto">
         <li className="flex items-center">
-          <FaShoppingCart className="text-red-600 mr-2" /> Custom Shopping Carts
+          <FaShoppingCart className="text-red-600 mr-2" /> Custom Shopping Carts for seamless user experience
         </li>
         <li className="flex items-center">
-          <FaCreditCard className="text-red-600 mr-2" /> Secure Payment Gateways
+          <FaCreditCard className="text-red-600 mr-2" /> Secure Payment Gateways for your e-commerce store
         </li>
         <li className="flex items-center">
-          <FaStore className="text-red-600 mr-2" /> Inventory Management
+          <FaStore className="text-red-600 mr-2" /> Real-time Inventory Management systems
         </li>
         <li className="flex items-center">
-          <FaShippingFast className="text-red-600 mr-2" /> Responsive Design
+          <FaShippingFast className="text-red-600 mr-2" /> Fully Responsive Design for mobile optimization
         </li>
         <li className="flex items-center">
-          <FaGift className="text-red-600 mr-2" /> Product Pages with Reviews
+          <FaGift className="text-red-600 mr-2" /> Product Pages with Reviews to drive more conversions
         </li>
       </ul>
 
       {/* Why Choose Us Section */}
-      <h3 className="text-2xl font-bold mb-4">Why Choose Us?</h3>
+      <h2 className="text-3xl font-bold mb-4">Why Choose Our E-commerce Solutions in Co. Clare?</h2>
       <p className="mb-6 text-lg">
-        We understand the unique challenges of building an online store. That’s why we focus on creating platforms that are:
+        We understand the unique challenges of building an online store, and our custom e-commerce platforms are built with the following benefits:
       </p>
       <ul className="list-none space-y-4 mb-6 text-left max-w-xl mx-auto">
         <li className="flex items-center">
-          <FaShoppingCart className="text-red-600 mr-2" /> Scalable for future growth.
+          <FaShoppingCart className="text-red-600 mr-2" /> Scalable for future growth of your business
         </li>
         <li className="flex items-center">
-          <FaCreditCard className="text-red-600 mr-2" /> Secure with reliable payment gateways.
+          <FaCreditCard className="text-red-600 mr-2" /> Secure Payment Gateways for peace of mind
         </li>
         <li className="flex items-center">
-          <FaShippingFast className="text-red-600 mr-2" /> Optimized for fast loading speeds.
+          <FaShippingFast className="text-red-600 mr-2" /> Optimized for fast loading speeds and user experience
         </li>
         <li className="flex items-center">
-          <FaGift className="text-red-600 mr-2" /> Customer-centric with easy navigation.
+          <FaGift className="text-red-600 mr-2" /> Customer-friendly navigation for seamless shopping
         </li>
         <li className="flex items-center">
-          <FaStore className="text-red-600 mr-2" /> Mobile-friendly to reach every customer.
+          <FaStore className="text-red-600 mr-2" /> Mobile-Friendly and optimized for all devices
         </li>
       </ul>
-
-
-      {/* Call to Action */}
-      <div className="mt-6">
-        <button
-          className="text-white bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg shadow-md"
-          onClick={() => window.scrollTo(0, document.body.scrollHeight)}
-        >
-          Get Started Today
-        </button>
-      </div>
 
       {/* Back to Home */}
       <div className="mt-6">
         <Link to="/" className="text-blue-500 underline">Back to Home</Link>
       </div>
 
-      {/* Contact Form Section */}
-      <section className="mt-20">
-        <ContactForm />  {/* This renders the contact form at the bottom */}
+      {/* Call to Action - Contact Form */}
+      <h2 className="text-2xl font-bold mb-4">Get Started with Us Today!</h2>
+      <p className="mb-6 text-lg">
+        Interested in scaling your online business? Fill out the contact form below, and let's discuss your e-commerce needs.
+      </p>
+
+      {/* Contact Form Section - Primary Call to Action */}
+      <section className="mt-10">
+        <ContactForm />  {/* This renders the contact form as the CTA */}
       </section>
+
     </section>
   );
 };

@@ -54,16 +54,6 @@ const WebDevelopment = () => {
         </li>
       </ul>
 
-      {/* Call to Action */}
-      <div className="mt-6">
-        <button
-          className="text-white bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg shadow-md"
-          onClick={() => window.scrollTo(0, document.body.scrollHeight)}
-        >
-          Get Your Custom Website
-        </button>
-      </div>
-
       {/* Back to Home */}
       <div className="mt-6">
         <Link to="/" className="text-blue-500 underline">Back to Home</Link>
