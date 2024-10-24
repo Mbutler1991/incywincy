@@ -67,6 +67,7 @@ WSGI_APPLICATION = 'incywincybackend.wsgi.application'
 
 
 CORS_ALLOWED_ORIGINS = [
+    "https://incywincy-e84781e01ccd.herokuapp.com",
     "http://localhost:3000",
     "http://localhost:5173",
     "https://www.incywincywebservices.com",
