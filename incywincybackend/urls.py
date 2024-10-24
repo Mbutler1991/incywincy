@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 from rest_framework.routers import DefaultRouter
 from portfolio.views import ProjectViewSet, ContactMessageViewSet
 from django.conf import settings
