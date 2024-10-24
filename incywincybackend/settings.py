@@ -129,9 +129,8 @@ STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-REACT_APP_DIR = os.path.join(BASE_DIR, 'incywincywebservices', 'dist')
 STATICFILES_DIRS = [
-    os.path.join(REACT_APP_DIR)  
+    BASE_DIR / 'incywincywebservices/dist',  
 ]
 
 # Default primary key field type

@@ -1,19 +1,20 @@
 from django.contrib import admin
-from django.urls import path, include, re_path
+from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from portfolio.views import ProjectViewSet, ContactMessageViewSet
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.generic import TemplateView
 
 router = DefaultRouter()
 router.register(r'projects', ProjectViewSet)
 router.register(r'contact', ContactMessageViewSet, basename='contact')
-from django.views.generic import TemplateView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('portfolio.urls')),
-    re_path(r'^.*$', TemplateView.as_view(template_name='incywincywebservices/index.html'), name='home'),
+    path('', TemplateView.as_view(template_name='dist/index.html')),
 ]
 
 if settings.DEBUG:
