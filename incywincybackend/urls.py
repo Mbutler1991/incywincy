@@ -8,10 +8,12 @@ from django.conf.urls.static import static
 router = DefaultRouter()
 router.register(r'projects', ProjectViewSet)
 router.register(r'contact', ContactMessageViewSet, basename='contact')
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('portfolio.urls')),
+    re_path(r'^.*$', TemplateView.as_view(template_name='index.html'), name='home'),
 ]
 
 if settings.DEBUG:
