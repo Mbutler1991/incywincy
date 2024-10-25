@@ -14,7 +14,7 @@ router.register(r'contact', ContactMessageViewSet, basename='contact')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('portfolio.urls')),
-    path('', TemplateView.as_view(template_name='dist/index.html')),
+    path('', TemplateView.as_view(template_name='index.html')),
 ]
 
 if settings.DEBUG:
