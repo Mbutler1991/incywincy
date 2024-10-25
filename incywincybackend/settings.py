@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.staticfiles',
     'rest_framework',
     'portfolio',
     'corsheaders',
@@ -35,10 +36,10 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'incywincybackend.middleware.FixMimeTypeMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -63,7 +64,8 @@ TEMPLATES = [
     },
 ]
 
-STATIC_URL = '/incywincywebservices/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, '..', 'incywincywebservices', 'dist')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, '..', 'incywincywebservices', 'dist', 'assets'),
 ]
@@ -85,11 +87,8 @@ CORS_ALLOWED_ORIGINS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-   }
-} 
+    'default': dj_database_url.config(default='sqlite:///db.sqlite3')
+}
 
 
 # Configure the database from the DATABASE_URL environment variable
