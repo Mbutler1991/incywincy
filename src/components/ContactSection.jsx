@@ -16,8 +16,17 @@ const ContactSection = () => {
     };
 
     const handleSubmit = (e) => {
-        setSuccessMessage('Thank You! Your message has been sent!');
-        setFormData({ name: '', email: '', message: '' });
+        const form = e.target;
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(new FormData(form)).toString()
+        })
+        .then(() => {
+            setSuccessMessage('Thank You! Your message has been sent!');
+            setFormData({ name: '', email: '', message: '' });
+        })
+        .catch((error) => alert(error));
     };
 
     return (

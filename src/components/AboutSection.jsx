@@ -19,7 +19,7 @@ const AboutSection = () => {
                 Your success is our success, and we're dedicated to providing the best <strong>web solutions</strong> with a personal touch.
             </p>
             <p className="text-lg max-w-2xl mx-auto">
-                Let's build something amazing together! <a href="/contact" className="text-blue-500 hover:underline">Get in touch</a> to discuss your project.
+                Let's build something amazing together! <a href="#contact" className="text-blue-500 hover:underline">Get in touch</a> to discuss your project.
             </p>
             
         </section>
