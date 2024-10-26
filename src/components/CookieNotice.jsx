@@ -20,7 +20,7 @@ const CookieNotice = () => {
     }
 
     return (
-        <div className="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 z-50">
+        <div className="fixed bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 z-50">
             <div className="container mx-auto flex justify-between items-center">
                 <p className="text-sm">
                     We use cookies to ensure you get the best experience on our website. By continuing to use this site, you consent to our use of cookies.
