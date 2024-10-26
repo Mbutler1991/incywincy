@@ -30,7 +30,7 @@ const ContactSection = () => {
                     <input
                         type="text"
                         name="name"
-                        className="w-full p-2 border border-gray-300 rounded"
+                        className="w-full p-2 border border-gray-300 rounded text-black"
                         placeholder="Your Name"
                         value={formData.name}
                         onChange={handleChange}
@@ -40,7 +40,7 @@ const ContactSection = () => {
                     <input
                         type="email"
                         name="email"
-                        className="w-full p-2 border border-gray-300 rounded"
+                        className="w-full p-2 border border-gray-300 rounded text-black"
                         placeholder="Your Email"
                         value={formData.email}
                         onChange={handleChange}
@@ -49,7 +49,7 @@ const ContactSection = () => {
                 <div className="mb-4">
                     <textarea
                         name="message"
-                        className="w-full p-2 border border-gray-300 rounded"
+                        className="w-full p-2 border border-gray-300 rounded text-black"
                         placeholder="Your Message"
                         value={formData.message}
                         onChange={handleChange}
