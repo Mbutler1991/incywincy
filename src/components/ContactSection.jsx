@@ -16,7 +16,6 @@ const ContactSection = () => {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault();
         setSuccessMessage('Thank You! Your message has been sent!');
         setFormData({ name: '', email: '', message: '' });
     };
@@ -25,7 +24,7 @@ const ContactSection = () => {
         <section id="contact" className="py-20 bg-gray-100 text-center">
             <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
             {successMessage && <p className="text-green-500 mb-4">{successMessage}</p>}
-            <form className="max-w-lg mx-auto" onSubmit={handleSubmit} name="contact" method="POST" netlify>
+            <form className="max-w-lg mx-auto" onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="mb-4">
                     <input
