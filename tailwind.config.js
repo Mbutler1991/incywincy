@@ -4,8 +4,8 @@ import tailwindScrollbar from 'tailwind-scrollbar';
 
 export default {
   content: [
-    './incywincywebservices/src/**/*.{js,jsx,ts,tsx}', 
-    './incywincywebservices/index.html', 
+    './src/**/*.{js,jsx,ts,tsx}', 
+    './index.html', 
   ],
   theme: {
     extend: {
