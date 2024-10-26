@@ -24,7 +24,7 @@
         "id": 4,
         "title": "Fuel Cost Calculator",
         "description": "Fully backend terminal based application which takes user input to work out how much money they will need to spend on fuel for any given journey helping them prepare better.",
-        "image": "public/images/fuel-cost-screenshot.png",
+        "image": "/images/fuel-cost-screenshot.png",
         "link": "https://fuelcost-calculator-943cd1e29a41.herokuapp.com"
     }
 ]
