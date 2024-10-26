@@ -25,7 +25,7 @@ const Header = () => {
                     </div>
                 </div>
                 <h1 className="hidden md:block text-purple text-2xl">
-                    Incy Web Services
+                    Incy Wincy Web Services
                 </h1>
             </div>
         </header>
