@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Art By Kita",
+        "description": "Fully device, browser and SEO optimized website made for a Dreamscape and a Landscape artist with full payment capabilities.",
+        "image": "/images/art-by-kita-screenshot.jpg",
+        "link": "https://www.artbykita.com"
+    },
+    {
+        "id": 2,
+        "title": "Boardom Be Gone",
+        "description": "Full stack website with a large database for sale of games and board games. Website is fully browser, device and SEO optimized.",
+        "image": "/images/boardom-be-gone-screenshot.jpg",
+        "link": "https://boardom-be-gone-92a7cf5b2b91.herokuapp.com"
+    },
+    {
+        "id": 3,
+        "title": "ADHD Screening",
+        "description": "A fully front end site aimed at parents, has a questionnaire to fill out to estimate if your child has ADHD, graded across 5 metrics (symptom groups) and can advise of services in your area.",
+        "image": "/images/ADHD-screenshot.png",
+        "link": "https://mbutler1991.github.io/childhood-adhd-quiz"
+    },
+    {
+        "id": 4,
+        "title": "Fuel Cost Calculator",
+        "description": "Fully backend terminal based application which takes user input to work out how much money they will need to spend on fuel for any given journey helping them prepare better.",
+        "image": "public/images/fuel-cost-screenshot.png",
+        "link": "https://fuelcost-calculator-943cd1e29a41.herokuapp.com"
+    }
+]

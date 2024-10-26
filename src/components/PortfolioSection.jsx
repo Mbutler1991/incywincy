@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import projectsData from '../projects.json'; // Import the JSON file
 
 const PortfolioSection = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/api/projects/')
-            .then(response => {
-                setProjects(response.data);
-            })
-            .catch(error => {
-                console.error('There was an error fetching the projects!', error);
-            });
+        // Set the projects state using the imported JSON data
+        setProjects(projectsData);
     }, []);
 
     return (
