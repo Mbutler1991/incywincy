@@ -1,6 +1,0 @@
-# Disallow web crawlers from accessing the admin panel
-User-agent: *
-Disallow: /admin/
-
-# Specify the location of the sitemap
-Sitemap: https://www.incywincywebservices.com/sitemap.xml
