@@ -5,7 +5,7 @@ import { SitemapStream, streamToPromise } from 'sitemap';
 // Define the URLs for your sitemap
 const urls = [
   { url: '/', changefreq: 'daily', priority: 1.0 },
-  { url: '/se-optimization', changefreq: 'monthly', priority: 0.7 },
+  { url: '/seo-optimization', changefreq: 'monthly', priority: 0.7 },
   { url: '/web-development', changefreq: 'monthly', priority: 0.7 },
   { url: '/ecommerce-solutions', changefreq: 'monthly', priority: 0.7 },
 ];
