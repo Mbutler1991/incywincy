@@ -15,33 +15,18 @@ const ContactSection = () => {
         });
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        try {
-            const response = await fetch('/.netlify/functions/submit-form', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-            const result = await response.json();
-            if (response.ok) {
-                setSuccessMessage('Thank You! Your message has been sent!');
-                setFormData({ name: '', email: '', message: '' });
-            } else {
-                console.error('There was an error sending the message!', result);
-            }
-        } catch (error) {
-            console.error('There was an error sending the message!', error);
-        }
+        setSuccessMessage('Thank You! Your message has been sent!');
+        setFormData({ name: '', email: '', message: '' });
     };
 
     return (
         <section id="contact" className="py-20 bg-gray-100 text-center">
             <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
             {successMessage && <p className="text-green-500 mb-4">{successMessage}</p>}
-            <form className="max-w-lg mx-auto" onSubmit={handleSubmit}>
+            <form className="max-w-lg mx-auto" onSubmit={handleSubmit} name="contact" method="POST" netlify>
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="mb-4">
                     <input
                         type="text"
