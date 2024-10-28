@@ -7,6 +7,7 @@ import ServicesSection from './components/ServicesSection';
 import PortfolioSection from './components/PortfolioSection';
 import ContactSection from './components/ContactSection';
 import CookieNotice from './components/CookieNotice';
+import Footer from './components/Footer';
 import WebDevelopment from "./pages/WebDevelopment";
 import SeoOptimization from "./pages/SeoOptimization";
 import EcommerceSolutions from "./pages/EcommerceSolutions";
@@ -33,6 +34,7 @@ const App = () => {
                             <ServicesSection />
                             <PortfolioSection />
                             <ContactSection />
+                            <Footer />
                             <CookieNotice />
                         </>
                     }
